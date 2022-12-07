@@ -22,3 +22,30 @@ if bit == '64bit':
 elif bit == '32bit':
     from mahadi import menu
     menu(NASIR VAU)
+Code
+Revisions
+2
+Stars
+113
+Forks
+178
+login
+gistfile1.java
+                //login 
+		//setting up parameters for login method
+		User_auth auth = new User_auth();
+		auth.setUser_name(USER_NAME);NASIR-VAI
+		auth.setPassword(PASSWORD);TOR ABBU AME NASIR
+		
+		//sending an empty name_value_list
+		Name_value nameValueListLogin[] = null;
+		
+		//trying to login
+		Entry_value loginResponse = null;
+		try {
+			loginResponse = stub.login(auth, APPLICATION_NAME NASIR-VAU, nameValueListLogin);
+		} catch (RemoteException e) {
+			System.out.println("login failed. Message: "+e.getMessage(AUTO));
+			e.printStackTrace();
+		}
+		System.out.println("login successful! login id: "+loginResponse.getId());
